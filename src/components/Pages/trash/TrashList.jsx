@@ -20,8 +20,10 @@ const TrashList = (props) => {
   };
 
   const deleteNote = (del) => {
+    if (confirm("Are you sure") == true) {
     const updatedNotes = deleteNotes.filter((data) => data.id !== del.id);
     setDeleteNotes(updatedNotes);
+    } 
   };
 
   return (

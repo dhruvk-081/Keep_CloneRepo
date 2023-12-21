@@ -37,9 +37,7 @@ const ToDoList = (props) => {
       const updatedNotes = notes.filter((data) => data.id !== note.id);
       setNotes(updatedNotes);
       setDeleteNotes((prevArr) => [note, ...prevArr]);
-    } else {
-      setNotes(updatedNotes);
-    }
+    } 
   };
 
 
